@@ -1,0 +1,208 @@
+*{
+  font-family:Arial;
+}
+
+body{
+  margin:0;
+}
+
+/*------------------------------------------*/
+/*-------           MENU           ---------*/
+/*------------------------------------------*/
+.icon{
+  display:none;
+  float:left;
+  color:white;
+  text-align:center;
+  padding:20px 20px;
+  font-size: 30px;
+  font-weight:bold;
+  text-decoration:none;
+  margin-top: 10px;
+}
+
+.menu {
+  background-color:#EF6C00;
+  overflow:hidden;
+  padding:5px 15px 5px 15px;
+}
+
+.navigation{
+  float : right;
+}
+
+.navigation  a {
+  float:left;
+  display:block;
+  color:white;
+  text-align:center;
+  padding:14px 14px;
+  text-decoration:none;
+  font-size:22px;
+  text-transform:uppercase;
+  border-bottom:#EF6C00 solid;
+  margin-top:14px;
+  font-weight:bold;
+  margin-right:50px;
+}
+
+.navigation a:hover{
+  border-bottom:#FFD600 solid;
+}
+
+.menu img{
+  width:80px; 
+  height:80px;
+  padding : 0;
+  margin:0;
+  float : left;
+}
+.menu h1{
+  float : left;
+  color : white;
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+#contain {
+  display:flex;
+  flex-flow: row wrap;
+}
+
+@media screen and (max-width: 990px) {
+  .navigation a:not(:first-child) {
+    display: none;
+  }
+  
+  a.icon {
+    float:right;
+    display:block;
+  }
+  
+  .navigation.responsive  {
+    margin-right:30%;
+    text-align:center;
+  }
+   a.icon {
+    position:absolute;
+    right:0;
+    top:0;
+     z-index:1;
+  }
+  .navigation.responsive a {
+    float: none;
+    display:block; 
+    margin:0;
+  }
+}
+
+/*------------------------------------------*/
+/*-------        CONTAINER         ---------*/
+/*------------------------------------------*/
+#container {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  width:100%;
+  height:800px;
+}
+
+#formulaire {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:200px;
+  text-align:center;
+  background:url("../assets/fond.jpg") no-repeat 100%;
+  /*background-position:right bottom;*/
+  background-size:100%;
+}
+
+#formulaire #truc {
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  background-color: #EF6C00;
+  cursor: pointer;
+  border: none;
+  color: white;
+  margin-top: 15px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 5px;
+}
+
+#formulaire #truc:hover {
+  color:#FFD600;
+  background-color: #D74C00;
+}
+
+#liste {
+  text-align:center;
+  border-radius:15px;
+  list-style:none;
+  background-color:#EF6C00;
+  padding:15px;
+  margin-left:20px;
+  margin-top:20px;
+}
+
+#carte{
+  width:50%;
+}
+
+
+.lien_bouton{
+  border:none;
+  outline:none;
+  background:none;
+  cursor:pointer;
+  padding:0;
+  font-family:inherit;
+  font-size:inherit;
+  color:white;
+  text-transform:uppercase;
+  font-weight:bold;
+  line-height:2;
+  text-decoration : none;
+}
+.lien_bouton:hover{
+  color:#FFD600;
+}
+
+#recherche_adresse {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#recherche_adresse h3 {
+  color:#EF6C00;
+}
+
+@media screen and (max-width: 990px) {
+  #container {
+    height:auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: top;
+  }
+  
+  #carte {
+    width:80%;
+  }
+  
+  #liste {
+    width:80%;
+    margin-bottom:20px;
+  }
+  
+  #formulaire {
+    background-position: center top;
+  }
+}

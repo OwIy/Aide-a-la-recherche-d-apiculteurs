@@ -1,0 +1,43 @@
+/** ELEMENT DE LA CARTE **/
+.mer {
+  stroke:white;
+  stroke-width:0.5;
+  fill:#75C5F0;
+}
+
+.region {
+  stroke:white;
+  stroke-width:0.5;
+  fill:#DEDEDD;
+}
+
+.pays {
+  stroke:white;
+  stroke-width:0.5;
+  fill:#C2C1C1;
+}
+
+.carte {
+  stroke:white;
+  stroke-width:0.5;
+  fill:#FFD600;
+}
+
+.carte:hover {
+  fill:#EF6C00;
+}
+
+#divInfo {
+  padding:8px;
+  font-size:20px;
+  font-weight:bold;
+  color:white;
+  background:black;
+  border-radius:15px;
+}
+
+/** CONTENEUR DE LA CARTE **/
+svg {
+  max-height:800px;
+  max-width:800px;
+}
